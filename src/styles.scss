@@ -1,1 +1,244 @@
-/* You can add global styles to this file, and also import other style files */
+//Reset CSS 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+//Importando as fontes
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200&family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+//Variáveis
+:root{
+    --font-family-primary:'Open Sans';
+    --font-family-second:'Raleway';
+    --font-family-third: 'Montserrat';
+
+}
+
+//Estilização Menu Nav-Bar
+.navbar-brand,.nav-link,.nav-link-dropdown-toggle,.dropdown-item,.d-flex{
+    font-family: var(--font-family-primary);
+}
+
+#nav-bar{
+    background-color: #000 !important;
+}
+
+
+.nav-link,.nav-link-active,.nav-link-dropdown-toggle,.dropdown-item,.nav-link-disabled{
+    font-size: 20px;
+    color: #fff !important;
+
+}
+.dropdown-item{
+    color:#000 !important;
+}
+.form-control{
+    font-size: 18px;
+    width: 304px;
+    height: 40px;
+    margin-top: 4px;
+}
+
+.dropdown-item:hover{
+   background-color:  #fff;
+}
+
+.form-control{
+    border-radius: 28px;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-btn-outline-danger{
+    color:#fff
+}
+
+.search{
+    padding-bottom: 4px;
+    width:auto
+}
+
+
+
+
+
+//Estilização logo
+.logo{
+    width: 148px;
+}
+
+//Responsividade
+
+
+@media screen and (min-width: 1011px) and (max-width: 1170px) {
+
+    .logo{
+        width: 110px;
+    }
+    .nav-link,.nav-link-active,.nav-link-dropdown-toggle,.dropdown-item,.nav-link-disabled{
+        font-size: 16px;
+    
+    }
+
+    .form-control{
+        font-size: 16px;
+        font-weight: 500;
+        width: 304px;
+        height: 30px;
+        margin-top:10px}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1010px) {
+    .nav-link,.nav-link-active,.nav-link-dropdown-toggle,.dropdown-item,.nav-link-disabled{
+        font-size: 15px;
+    
+    }
+    .form-control{
+        width: 286px;
+        height: 28px;
+        margin-top:10px}
+}
+
+@media screen and (min-width:651px) and (max-width: 992px) {
+    .logo{
+        width: 130px;
+    }
+    .form-control{
+        width: 326px;
+        height: 24px;
+        margin-top:12px}
+}
+
+@media screen and (min-width: 513px) and (max-width: 650px) {
+    .form-control{
+        width: 226px;
+        height: 24px;
+        margin-top:10px}
+
+}
+
+
+@media screen and (min-width: 455px) and (max-width: 512px) {
+    .logo{
+        width: 96px;
+    }
+    .form-control{
+        width: 226px;
+        height: 24px;
+        margin-top:12px}
+}
+
+@media screen and (min-width: 415px) and (max-width:454px){
+    .logo{
+        width: 82px;
+    }
+    .form-control{
+        width: 200px;
+        height: 20px;
+        margin-top:12px}
+
+    #button{
+        height: 28px !important; 
+        margin-top: 7px !important;
+        
+    }
+    .search{
+        margin-bottom: 18px !important;
+        width:18px
+    }
+}
+
+
+@media screen and (max-width:414px){
+    .logo{
+        width: 82px;
+    }
+    .form-control{
+        width: 174px;
+        height: 18px;
+        margin-top:10px}
+
+    #button{
+        height: 28px !important; 
+        margin-top: 5px !important;
+        
+    }
+    .search{
+        margin-bottom: 18px !important;
+        width:16px
+    }
+}
+
+
+
+@media screen and (max-width:380px){
+    .logo{
+        width: 68px;
+    }
+    .form-control{
+        width: 154px;
+        height: 18px;
+        margin-top:10px}
+}
+
+
+@media screen and (max-width:352px){
+    .logo{
+        width: 68px;
+    }
+    .form-control{
+        width: 156px;
+        height: 18px;
+        margin-top:10px
+    }
+}
+
+
+
+
+
