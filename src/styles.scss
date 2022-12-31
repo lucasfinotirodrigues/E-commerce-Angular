@@ -111,6 +111,24 @@ table {
     width: 148px;
 }
 
+
+
+//Estilizando o rodapé
+
+
+#footer{
+    background-color: #000;
+    padding: 40px;
+    .footer{
+    display: flex;
+    flex-direction: column;
+    }
+    
+}
+
+
+
+
 //Responsividade
 
 
