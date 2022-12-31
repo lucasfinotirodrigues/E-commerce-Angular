@@ -16,7 +16,7 @@
     
     <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-bar">
       <div class="container-fluid">
-        <img class="logo" src="assets/logo.png">
+        <img [routerLink]="['pages/home']" class="logo" src="assets/logo.png">
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" aria-label="Search">
           <button class="btn btn-outline-danger" id="button" type="submit" style="height: 36px; margin-top: 6px;"><img class="search"src="assets/search-.svg"></button>         
