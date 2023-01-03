@@ -12,3 +12,14 @@
     display: flex;
     flex-direction: row;
 }
+
+@media screen and (max-width:800px) {
+    
+    .d-block{
+        border-radius: 16px;
+    }
+    
+    .d-block-d{
+        border-radius: 20px;
+    }
+}

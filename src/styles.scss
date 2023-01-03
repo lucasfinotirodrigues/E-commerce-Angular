@@ -174,10 +174,36 @@ table {
     
 }
 
+//Responsividade section contact
+@media screen and (max-width:800px){
+    
+    .container-contact{
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        .titulo{
+            align-items: center;
+            font-size: 16px;
+            .icons{
+                color:#fff;
+                
+            }
+        }
 
 
+    }
+    .subtitle{
+        font-size: 14px;
+    }
+}
 
-//Responsividade
+@media screen and (max-width:300px){
+    .subtitle{
+        font-size: 12px;
+    }
+}
+
+//Responsividade Geral
 
 
 @media screen and (min-width: 1011px) and (max-width: 1170px) {
@@ -297,7 +323,28 @@ table {
         width: 68px;
     }
     .form-control{
-        width: 156px;
+        width: 136px;
+        height: 18px;
+        margin-top:10px
+    }
+}
+@media screen and (max-width:332px){
+    .logo{
+        width: 60px;
+    }
+    .form-control{
+        width: 116px;
+        height: 18px;
+        margin-top:10px
+    }
+}
+
+@media screen and (max-width:300px){
+    .logo{
+        width: 54px;
+    }
+    .form-control{
+        width: 116px;
         height: 18px;
         margin-top:10px
     }
