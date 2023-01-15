@@ -22,6 +22,43 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        button{
+            font-family: var(--font-family-second);
+            font-size: 16px;
+            width: 120px;
+            background-color: #ff0000;
+            color:#fff;
+            border: none
+          
+        }
+       
+        .campo{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .input-login{
+
+                width:100%;
+                font-size: 20px;
+                width: 304px;
+                height: 36px;
+                border-radius: 8px;
+                border: 1.6px solid #fff;
+                font-family: var(--font-family-second);
+                font-weight: 400;
+                padding:8px;
+                background-color: #000000;
+                color: #fff;
+            
+            }
+            label{
+                font-weight: 300;
+                font-size: 16px;
+                color:#ff0000;
+                font-family: var(--font-family-second);
+                margin-bottom: 12px;
+            }
+        }
     }
     
 
@@ -32,19 +69,6 @@
         text-align: center;
         font-family: var(--font-family-second);
     }
-    .input-login{
-
-        width:100%;
-        font-size: 16px;
-        width: 304px;
-        height: 36px;
-        border-radius: 8px;
-        border: 1.6px solid #ff0000;
-        font-family: var(--font-family-second);
-        font-weight: 400;
-        padding:8px;
-        background-color: #121212;
     
-    }
 
 }
