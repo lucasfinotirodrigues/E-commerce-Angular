@@ -12,4 +12,11 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  MostrarSenha = false
+
+  visibilidadeSenha(){
+    this.MostrarSenha = !this.MostrarSenha
+  }
+  
 }

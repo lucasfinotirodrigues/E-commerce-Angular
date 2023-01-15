@@ -8,7 +8,9 @@
     </div>
     <div class="campo">
         <label for="">Senha</label>
-        <input class="input-login" type="password" name="" id="">
+        <input [type]="MostrarSenha ? 'text' : 'password'" class="input-login" type="password" id="">
+        <img class="image" [src]="MostrarSenha ?  '../../../assets/eye-on.svg' : '../../../assets/eye-off.svg' " (click)="visibilidadeSenha()" >
+     
     </div>
     <button class="btn btn-outline-danger" id="button" type="submit">Entrar</button>
 </div>
