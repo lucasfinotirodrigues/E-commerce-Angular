@@ -1,0 +1,25 @@
+
+.container-login{
+    .form{       
+        padding: 52px;
+        margin: 48px 48px;
+        height: 520px;
+        width: 480px;
+        border: 2px solid #ff0000;
+        background: #000;
+        border-radius: 16px;
+        //alinhamento
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    background-image:url(../../../assets/mugiwarastorre.svg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
