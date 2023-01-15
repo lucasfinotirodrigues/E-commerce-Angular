@@ -88,7 +88,7 @@ table {
 }
 
 .form-control{
-    border-radius: 28px;
+    border-radius: 8px;
 }
 
 .d-flex{
@@ -221,7 +221,8 @@ table {
         font-weight: 500;
         width: 304px;
         height: 30px;
-        margin-top:10px}
+        margin-top:10px;
+        border-radius: 8px;}
 }
 
 @media screen and (min-width: 993px) and (max-width: 1010px) {
@@ -232,7 +233,8 @@ table {
     .form-control{
         width: 286px;
         height: 28px;
-        margin-top:10px}
+        margin-top:10px;
+        border-radius: 8px}
 }
 
 @media screen and (min-width:651px) and (max-width: 992px) {
@@ -242,14 +244,16 @@ table {
     .form-control{
         width: 326px;
         height: 24px;
-        margin-top:12px}
+        margin-top:12px;
+        border-radius: 8px}
 }
 
 @media screen and (min-width: 513px) and (max-width: 650px) {
     .form-control{
         width: 226px;
         height: 24px;
-        margin-top:10px}
+        margin-top:10px;
+        border-radius: 8px}
 
 }
 
@@ -261,7 +265,8 @@ table {
     .form-control{
         width: 226px;
         height: 24px;
-        margin-top:12px}
+        margin-top:12px;
+        border-radius: 8px}
 }
 
 @media screen and (min-width: 415px) and (max-width:454px){
@@ -271,7 +276,8 @@ table {
     .form-control{
         width: 200px;
         height: 20px;
-        margin-top:12px}
+        margin-top:12px;
+        border-radius: 8px}
 
     #button{
         height: 28px !important; 
@@ -292,7 +298,8 @@ table {
     .form-control{
         width: 174px;
         height: 18px;
-        margin-top:10px}
+        margin-top:10px;
+        border-radius: 8px}
 
     #button{
         height: 28px !important; 
@@ -314,7 +321,8 @@ table {
     .form-control{
         width: 154px;
         height: 18px;
-        margin-top:10px}
+        margin-top:10px;
+        border-radius: 8px}
 }
 
 
@@ -325,7 +333,8 @@ table {
     .form-control{
         width: 136px;
         height: 18px;
-        margin-top:10px
+        margin-top:10px;
+        border-radius: 8px
     }
 }
 @media screen and (max-width:332px){
@@ -335,7 +344,8 @@ table {
     .form-control{
         width: 116px;
         height: 18px;
-        margin-top:10px
+        margin-top:10px;
+        border-radius: 8px
     }
 }
 
@@ -346,7 +356,8 @@ table {
     .form-control{
         width: 116px;
         height: 18px;
-        margin-top:10px
+        margin-top:10px;
+        border-radius: 8px
     }
 }
 
