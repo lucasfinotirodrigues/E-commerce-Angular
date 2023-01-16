@@ -1,1 +1,29 @@
-<p>cadastro works!</p>
+<div class="container-login">
+
+    <div class="form">
+        <h2 class="titulo-login">Cadastre-se para aproveitar nossas promoções!</h2>
+        <div class="campo">
+            <label for="">Nome</label>
+            <input class="input-login" type="nome">
+        </div>
+        <div class="campo">
+            <label for="">E-mail</label>
+            <input class="input-login" type="email">
+        </div>
+        <div class="campo">
+            <label for="">Senha</label>
+            <input [type]="MostrarSenha ? 'text' : 'password'" class="input-login" type="password" id="">
+            <img class="image" [src]="MostrarSenha ?  '../../../assets/eye-on.svg' : '../../../assets/eye-off.svg' " (click)="visibilidadeSenha()" >
+         
+        </div>
+        <div class="campo">
+            <label for=""> Confirmação de Senha</label>
+            <input [type]="MostrarSenha ? 'text' : 'password'" class="input-login" type="password" id="">
+            <img class="image" [src]="MostrarSenha ?  '../../../assets/eye-on.svg' : '../../../assets/eye-off.svg' " (click)="visibilidadeSenha()" >
+         
+        </div>
+        <button class="btn btn-outline-danger"  type="submit">Cadastrar</button>
+        <h3>Já Possui conta? <a>Entrar</a> </h3>
+    </div>
+    
+    </div>
