@@ -92,3 +92,30 @@
     
 
 }
+
+
+//Responsividade
+
+@media screen and (max-width: 450px) {
+    .form{       
+        padding: 48px!important;
+        margin: 4px 4px!important;
+        height: 480px!important;
+        width: 360px!important;
+    }
+        .titulo-login{
+            font-size: 24px!important;
+        }
+        .label{
+            font-weight: 500!important;
+        }
+
+}
+
+@media screen and (max-width: 380px) {
+    .form{       
+        padding: 40px!important;
+        height: 420px!important;
+        width: 320px!important;
+    }
+}
