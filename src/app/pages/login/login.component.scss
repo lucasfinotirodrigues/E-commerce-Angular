@@ -12,7 +12,7 @@
         padding: 52px;
         margin: 48px 48px;
         height: 520px;
-        width: 480px;
+        width: 420px;
         border: 4px #ff0000;
         border-style: double;
         background: #000000b6;
@@ -24,12 +24,25 @@
         justify-content: space-between;
         button{
             font-family: var(--font-family-second);
-            font-size: 16px;
+            font-size: 20px;
             width: 120px;
             background-color: #ff0000;
+            font-weight: 400;
             color:#fff;
             border: none
           
+        }
+        h3{
+            color:#fff;
+            font-size: 20px;
+            text-transform: initial;
+            text-align: center;
+            font-weight: 400;
+            font-family: var(--font-family-second);
+        }
+        a{
+            color:#ff0000;
+            font-weight: 500;
         }
        
         .campo{
@@ -59,10 +72,10 @@
             }
             label{
                 font-weight: 300;
-                font-size: 16px;
+                font-size: 20px;
                 color:#ff0000;
                 font-family: var(--font-family-second);
-                margin-bottom: 12px;
+                margin-bottom: 10px;
             }
         }
     }
@@ -73,6 +86,7 @@
         font-size: 28px;
         text-transform: initial;
         text-align: center;
+        font-weight: 500;
         font-family: var(--font-family-second);
     }
     
