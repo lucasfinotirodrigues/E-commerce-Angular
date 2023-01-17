@@ -65,6 +65,25 @@ table {
     background-color: #000 !important;
 }
 
+.dropdown-menu{
+    border-radius: 0;
+}
+
+.dropdown-divider{
+    border:none;
+}
+
+.dropdown-item{
+font-size: 16px!important;
+font-weight: 500!important;
+}
+
+.dropdown-item:hover{
+
+color: #ff0000!important;
+
+}
+
 
 .nav-link,.nav-link-active,.nav-link-dropdown-toggle,.dropdown-item,.nav-link-disabled{
     font-size: 16px;
