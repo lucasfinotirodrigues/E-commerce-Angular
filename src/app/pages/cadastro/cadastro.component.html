@@ -22,13 +22,15 @@
             <img class="image" [src]="MostrarSenha ?  '../../../assets/eye-on.svg' : '../../../assets/eye-off.svg' " (click)="visibilidadeSenha()" >
          
         </div>
-        <div class="politicas">
-            <input type="checkbox" class="checkbox"name="" id="">
-            <p>Eu li e aceito todos os  <a>termos de privacidade</a></p>
-        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="chk1" class="checkbox" name="chk">
+            <label for="chk1">
+                <p class="text">Eu li e aceito todos os  <a>termos de privacidade</a></p>
+            </label>
+          </div>
       
         <button class="btn btn-outline-danger"  type="submit">Cadastrar</button>
-        <h3>Já Possui conta? <a>Entrar</a> </h3>
+        <h3>Já Possui conta? <a class="logar">Entrar</a> </h3>
     </div>
     
     </div>
