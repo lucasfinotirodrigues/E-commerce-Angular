@@ -1,25 +1,116 @@
-.d-block{
+h2 {
+    background-color: #000;
+    color: #fff;
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: capitalize
+}
+
+.destaques {
+    display: flex;
+    background-color: #000;
+    width: 100vw;
+    padding: 56px;
+    flex-direction: column;
+
+    .title-destaques {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        margin-bottom: 48px;
+
+        img {
+            width: 32px;
+        }
+    }
+    .cards-top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .card{
+            display: flex;
+            flex-direction: column;
+            background-color: #000;
+            justify-content: space-between;
+            gap: 28px;
+
+           span{
+            border:#ff0000 1px solid;
+           }
+
+            h3{
+                font-family: var(--font-family-primary);
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .completo{
+                display: flex;
+                flex-direction: row;                
+                gap: 8px;
+                justify-content: space-between;
+                img{
+                    width:64px
+                }
+            }
+            .info{
+                display: flex;
+                flex-direction: column;
+                
+                justify-content: space-between;
+                .titulo{
+                    font-family: var(--font-family-primary);
+                    color: #fff;
+                    font-size: 28px; 
+                    text-transform: capitalize;
+                }
+                .posicao{
+                    font-family: var(--font-family-primary);
+                    color: #fff;
+                    font-size: 24px;
+                    border: #ff0000 2px double;
+                    border-radius: 4px;
+                    padding: 4px;
+                    text-transform: initial;
+                    .icon{
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.d-block {
     border-radius: 24px;
     width: 90%;
 }
 
-.d-block-d{
+.d-block-d {
     width: 32%;
     border-radius: 28px;
 }
 
-.container{
+.header {
     display: flex;
     flex-direction: row;
+    background-color: #000;
+    padding: 56px;
 }
 
 @media screen and (max-width:800px) {
-    
-    .d-block{
+
+    .d-block {
         border-radius: 16px;
     }
-    
-    .d-block-d{
+
+    .d-block-d {
         border-radius: 20px;
+    }
+
+    .header {
+        padding: 24px;
     }
 }
