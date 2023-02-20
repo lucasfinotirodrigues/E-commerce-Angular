@@ -49,4 +49,25 @@
             }
         }
     }
+
+    //Pagination
+    
+
+    .page-link {
+        position: relative;
+        display: block;
+        padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+        font-size: var(--bs-pagination-font-size);
+        color: #bb2d3b;
+        text-decoration: none;
+        background-color: #ffffff;
+        border:  1.5px solid #bb2d3b;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+   #active{
+    background-color:#bb2d3b; ;
+    color: #fff;
+   }
+   
 }

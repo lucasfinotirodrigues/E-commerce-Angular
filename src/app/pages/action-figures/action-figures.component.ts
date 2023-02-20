@@ -78,6 +78,15 @@ export class ActionFiguresComponent implements OnInit {
     
     {src:'../../../assets/af31.jpg', nome: 'Gekko Moria',tamanho:'20', preco:'211,90' },
 
+    
+    {src:'../../../assets/af34.jpg', nome: 'Rob Lucci',tamanho:'20', preco:'256,90' },
+    
+    {src:'../../../assets/af33.jpg', nome: 'Oden',tamanho:'20', preco:'118,90' },
+    
+    {src:'../../../assets/af35.jpg', nome: 'Buggy',tamanho:'28', preco:'123,90' },
+    
+    {src:'../../../assets/af36.jpg', nome: 'Sabo',tamanho:'26', preco:'308,90' },
+
   
     
   
@@ -88,3 +97,4 @@ export class ActionFiguresComponent implements OnInit {
   }
 
 }
+
