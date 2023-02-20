@@ -10,7 +10,6 @@ import { ActionFiguresComponent } from './pages/action-figures/action-figures.co
 import { ActionFigures2Component } from './pages/action-figures2/action-figures2.component';
 import { ActionFigures3Component } from './pages/action-figures3/action-figures3.component';
 import { MangasNovosComponent } from './pages/mangas-novos/mangas-novos.component';
-import { MangasSeminovosComponent } from './pages/mangas-seminovos/mangas-seminovos.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +20,7 @@ import { MangasSeminovosComponent } from './pages/mangas-seminovos/mangas-semino
     ActionFiguresComponent,
     ActionFigures2Component,
     ActionFigures3Component,
-    MangasNovosComponent,
-    MangasSeminovosComponent
+    MangasNovosComponent
   ],
   imports: [
     BrowserModule,
