@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { ActionFiguresComponent } from './pages/action-figures/action-figures.component';
+import { ActionFigures2Component } from './pages/action-figures2/action-figures2.component';
+import { ActionFigures3Component } from './pages/action-figures3/action-figures3.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ActionFiguresComponent } from './pages/action-figures/action-figures.co
     HomeComponent,
     LoginComponent,
     CadastroComponent,
-    ActionFiguresComponent
+    ActionFiguresComponent,
+    ActionFigures2Component,
+    ActionFigures3Component
   ],
   imports: [
     BrowserModule,
