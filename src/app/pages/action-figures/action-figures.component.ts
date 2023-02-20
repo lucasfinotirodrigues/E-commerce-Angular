@@ -69,6 +69,15 @@ export class ActionFiguresComponent implements OnInit {
     
     {src:'../../../assets/af26.jpg', nome: 'Big Mom',tamanho:'21', preco:'301,90' },
 
+    
+    {src:'../../../assets/af29.jpg', nome: 'Barba Negra',tamanho:'24', preco:'191,90' },
+    
+    {src:'../../../assets/af30.jpg', nome: 'Kuma',tamanho:'23', preco:'249,90' },
+    
+    {src:'../../../assets/af32.jpg', nome: 'Eustass Kid',tamanho:'25', preco:'343,90' },
+    
+    {src:'../../../assets/af31.jpg', nome: 'Gekko Moria',tamanho:'20', preco:'211,90' },
+
   
     
   
