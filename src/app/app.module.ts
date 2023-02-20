@@ -9,6 +9,8 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { ActionFiguresComponent } from './pages/action-figures/action-figures.component';
 import { ActionFigures2Component } from './pages/action-figures2/action-figures2.component';
 import { ActionFigures3Component } from './pages/action-figures3/action-figures3.component';
+import { MangasNovosComponent } from './pages/mangas-novos/mangas-novos.component';
+import { MangasSeminovosComponent } from './pages/mangas-seminovos/mangas-seminovos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ActionFigures3Component } from './pages/action-figures3/action-figures3
     CadastroComponent,
     ActionFiguresComponent,
     ActionFigures2Component,
-    ActionFigures3Component
+    ActionFigures3Component,
+    MangasNovosComponent,
+    MangasSeminovosComponent
   ],
   imports: [
     BrowserModule,
