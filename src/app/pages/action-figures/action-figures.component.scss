@@ -27,5 +27,17 @@
         img{
             width:200px
         }
+        .card-body{
+            .card-title{
+                font-size: 40px;
+                font-weight: 500;
+            }
+            .price{
+              color:#000;
+              font-size: 20px;
+              text-transform: uppercase;
+
+            }
+        }
     }
 }
