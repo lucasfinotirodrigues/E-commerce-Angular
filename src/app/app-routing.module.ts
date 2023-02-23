@@ -28,7 +28,7 @@ const routes: Routes = [
     path: 'action-figures3', component: ActionFigures3Component
   },
   {
-    path: 'manganovo', component: MangasNovosComponent
+    path: 'manga', component: MangasNovosComponent
   },
 ];
 
