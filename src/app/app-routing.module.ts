@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MangasNovosComponent } from './pages/mangas-novos/mangas-novos.component';
 import { RoupasFemininasComponent } from './pages/roupas-femininas/roupas-femininas.component';
+import { RoupasInfantisComponent } from './pages/roupas-infantis/roupas-infantis.component';
 import { RoupasMasculinasComponent } from './pages/roupas-masculinas/roupas-masculinas.component';
 
 const routes: Routes = [
@@ -37,6 +38,9 @@ const routes: Routes = [
   },
   {
     path: 'roupas-feminina', component: RoupasFemininasComponent
+  },
+  {
+    path: 'roupas-infantis', component: RoupasInfantisComponent
   },
 ];
 
