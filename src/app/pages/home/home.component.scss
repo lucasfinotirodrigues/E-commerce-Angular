@@ -7,6 +7,61 @@ h2 {
     text-transform: capitalize
 }
 
+.indicacoes{
+    display: flex;
+    background-color: #000;
+    padding: 56px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .circle{
+        display: flex;
+        justify-items: end;
+        img{
+            width:48px;
+            margin-bottom: 24px;
+            
+        }
+    }
+    .card-body{
+        background-color: #ff0000;
+        justify-content: space-between;
+
+        .arrow{
+            display: flex;
+            flex-direction: row-reverse;
+                        img{
+                width: 24px
+            }
+        }
+        .card-title{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .card-text{
+            font-size: 16px;
+            font-weight:300;
+
+        }
+
+    }
+    .card-text{
+        height: 96px;
+        
+    }
+}
+
+.title-indicacoes{
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    padding: 56px;
+    gap: 12px;
+
+    img {
+        width: 32px;
+    }
+}
 .destaques {
     display: flex;
     background-color: #000;
