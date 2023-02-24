@@ -9,6 +9,14 @@ export class RoupasMasculinasComponent implements OnInit {
 
   constructor() { }
 
+
+  lista = [
+
+    {src:'../../../assets/cm01.jpg', nome: 'Camiseta Kaido',preco:'79,90' },
+    
+    {src:'../../../assets/cm02.jpg', nome: 'Camiseta Katakuri',preco:'79,90' },
+
+  ]
   ngOnInit(): void {
   }
 
