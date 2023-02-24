@@ -7,7 +7,7 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MangasNovosComponent } from './pages/mangas-novos/mangas-novos.component';
-import { RoupasMasculinasComponent } from './roupas-masculinas/roupas-masculinas.component';
+import { RoupasMasculinasComponent } from './pages/roupas-masculinas/roupas-masculinas.component';
 
 const routes: Routes = [
   {

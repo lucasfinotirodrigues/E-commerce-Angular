@@ -10,7 +10,7 @@ import { ActionFiguresComponent } from './pages/action-figures/action-figures.co
 import { ActionFigures2Component } from './pages/action-figures2/action-figures2.component';
 import { ActionFigures3Component } from './pages/action-figures3/action-figures3.component';
 import { MangasNovosComponent } from './pages/mangas-novos/mangas-novos.component';
-import { RoupasMasculinasComponent } from './roupas-masculinas/roupas-masculinas.component';
+import { RoupasMasculinasComponent } from './pages/roupas-masculinas/roupas-masculinas.component';
 
 @NgModule({
   declarations: [
