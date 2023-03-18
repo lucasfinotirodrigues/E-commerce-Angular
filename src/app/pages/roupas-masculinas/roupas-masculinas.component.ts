@@ -34,7 +34,7 @@ export class RoupasMasculinasComponent implements OnInit {
     
     {src:'../../../assets/cm11.jpg', nome: 'Camiseta Luffy',preco:'89,90' },
     
-    {src:'../../../assets/cm12.jpg', nome: 'Camiseta Mugiwara',preco:'59,90' },
+    {src:'../../../assets/cm12.jpg', nome: 'Camiseta Luffy',preco:'59,90' },
 
   ]
   ngOnInit(): void {
