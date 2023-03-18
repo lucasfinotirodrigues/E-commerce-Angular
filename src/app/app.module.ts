@@ -12,6 +12,7 @@ import { ActionFigures3Component } from './pages/action-figures3/action-figures3
 import { MangasNovosComponent } from './pages/mangas-novos/mangas-novos.component';
 import { RoupasMasculinasComponent } from './pages/roupas-masculinas/roupas-masculinas.component';
 import { RoupasFemininasComponent } from './pages/roupas-femininas/roupas-femininas.component';
+import { QuadrosComponent } from './pages/quadros/quadros.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RoupasFemininasComponent } from './pages/roupas-femininas/roupas-femini
     ActionFigures3Component,
     MangasNovosComponent,
     RoupasMasculinasComponent,
-    RoupasFemininasComponent
+    RoupasFemininasComponent,
+    QuadrosComponent
   ],
   imports: [
     BrowserModule,
