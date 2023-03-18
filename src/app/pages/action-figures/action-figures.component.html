@@ -1,7 +1,7 @@
 <div class="container-action-figure p-4">
     <div class="content" *ngFor="let item of lista; let i = index">
         <div class="card" style="width: 18rem;">
-            <div (click)="alterIcon(i)"class="icon-favorito pt-4">
+            <div (click)="alterIcon(i)" class="icon-favorito pt-4">
                 <img class="icon-heart" src="{{item.default}}">
             </div>
             <img class="card-img-top" [src]=item.src alt="Card image cap">
@@ -17,10 +17,10 @@
             </div>
         </div>
     </div>
+</div>
 
-
-    <!--Pagination-->
-
+<!--Pagination-->
+<div class="container-action-figure p-4">
     <nav aria-label="...">
         <ul class="pagination pagination-lg">
             <li class="page-item"><a class="page-link" id="active" href="">1</a></li>
