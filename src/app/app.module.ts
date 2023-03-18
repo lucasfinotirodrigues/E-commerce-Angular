@@ -13,6 +13,8 @@ import { MangasNovosComponent } from './pages/mangas-novos/mangas-novos.componen
 import { RoupasMasculinasComponent } from './pages/roupas-masculinas/roupas-masculinas.component';
 import { RoupasFemininasComponent } from './pages/roupas-femininas/roupas-femininas.component';
 import { QuadrosComponent } from './pages/quadros/quadros.component';
+import { FeedbackComponent } from './pages/feedback/feedback.component';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,15 @@ import { QuadrosComponent } from './pages/quadros/quadros.component';
     MangasNovosComponent,
     RoupasMasculinasComponent,
     RoupasFemininasComponent,
-    QuadrosComponent
+    QuadrosComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts'),
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

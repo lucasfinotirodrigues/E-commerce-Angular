@@ -4,6 +4,7 @@ import { ActionFiguresComponent } from './pages/action-figures/action-figures.co
 import { ActionFigures2Component } from './pages/action-figures2/action-figures2.component';
 import { ActionFigures3Component } from './pages/action-figures3/action-figures3.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MangasNovosComponent } from './pages/mangas-novos/mangas-novos.component';
@@ -41,6 +42,9 @@ const routes: Routes = [
   },
   {
     path: 'quadros', component:QuadrosComponent
+  },
+  {
+    path: 'feedback', component:FeedbackComponent
   },
 ];
 
