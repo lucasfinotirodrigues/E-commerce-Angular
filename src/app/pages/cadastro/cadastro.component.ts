@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-cadastro',
@@ -25,5 +26,9 @@ export class CadastroComponent implements OnInit {
   visibilidadedaSenha(){
     this.MostraressaSenha = !this.MostraressaSenha
   }
+  stylelink = {
+    'text-transform':'initial'
+  }
+  
 }
 

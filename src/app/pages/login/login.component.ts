@@ -18,5 +18,9 @@ export class LoginComponent implements OnInit {
   visibilidadeSenha(){
     this.MostrarSenha = !this.MostrarSenha
   }
+
+  styleLink = {
+    'text-decoration':'none'
+  }
   
 }
