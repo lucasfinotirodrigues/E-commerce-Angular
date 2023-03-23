@@ -51,6 +51,8 @@ export class ActionFigures2Component implements OnInit {
    alteracaoIcone = true;
    
   ngOnInit(): void {
+    window.scrollTo(0, 0);
   }
+  
 
 }
