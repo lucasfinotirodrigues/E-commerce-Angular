@@ -16,6 +16,7 @@ import { RoupasFemininasComponent } from './pages/roupas-femininas/roupas-femini
 import { QuadrosComponent } from './pages/quadros/quadros.component';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+    IonicModule.forRoot(),
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts'),
     }),
