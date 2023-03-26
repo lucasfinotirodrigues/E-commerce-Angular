@@ -17,6 +17,7 @@ import { QuadrosComponent } from './pages/quadros/quadros.component';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { IonicModule } from '@ionic/angular';
+import { ModalTermosComponent } from './pages/modal-termos/modal-termos.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { IonicModule } from '@ionic/angular';
     RoupasMasculinasComponent,
     RoupasFemininasComponent,
     QuadrosComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    ModalTermosComponent
   ],
   imports: [
     BrowserModule,

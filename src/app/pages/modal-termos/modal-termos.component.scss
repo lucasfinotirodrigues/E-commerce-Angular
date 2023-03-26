@@ -1,0 +1,42 @@
+.conteudo {
+    padding: 0 12px 0 12px;
+    display: flex;
+    flex-direction: column;
+
+
+    p {
+        margin: 12px 0 12px 0;
+    }
+
+    .header-modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            margin: 12px 0 12px 0;
+            font-size: 20px;
+        }
+    }
+
+    .footer-modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            font-family: var(--font-family-second);
+            font-size: 18px;
+            width: 120px;
+            background-color: #ff0000;
+            font-weight: 400;
+            color: #fff;
+            border: none;
+
+            &:hover {
+                color: #fff;
+                background-color: #990000;
+            }
+        }
+    }
+}

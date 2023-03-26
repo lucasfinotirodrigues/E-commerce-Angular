@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgStyle } from '@angular/common';
+import { ModalController } from '@ionic/angular';
+import { ModalTermosComponent } from '../modal-termos/modal-termos.component';
 
 @Component({
   selector: 'app-cadastro',
@@ -8,7 +10,18 @@ import { NgStyle } from '@angular/common';
 })
 export class CadastroComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public modalController: ModalController) {}
+
+  //Função abrir modal
+
+  async showModal() {
+    const modal = await this.modalController.create({
+      component: ModalTermosComponent,
+      cssClass: 'modal-termos'
+    });
+    return await modal.present();
+  }
 
   ngOnInit(): void {
   }
