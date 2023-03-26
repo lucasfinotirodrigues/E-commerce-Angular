@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ModalActionFiguresComponent } from '../modal-action-figures/modal-action-figures.component';
 
 @Component({
   selector: 'app-action-figures',
@@ -31,7 +33,7 @@ export class ActionFiguresComponent implements OnInit {
     
     {src:'../../../assets/af17.jpg', nome: 'Brook',tamanho:'27', preco:'150,90',          default:'../../../assets/heart.svg'},
     
-    {src:'../../../assets/af19.jpg', nome: 'Jimbei',tamanho:'21', preco:'246,90',          default:'../../../assets/heart.svg'},   
+    {src:'../../../assets/af19.jpg', nome: 'Jinbe',tamanho:'21', preco:'246,90',          default:'../../../assets/heart.svg'},   
 
     {src:'../../../assets/af02.jpg', nome: 'Shanks o ruivo',tamanho:'22', preco:'225,90',          default:'../../../assets/heart.svg'},    
 
@@ -45,9 +47,15 @@ export class ActionFiguresComponent implements OnInit {
     this.lista[index].default = '../../../assets/heart.png';
   }
 
-  constructor() {
-  
-   }
+  constructor(public modalController: ModalController) {}
+
+  async showModal() {
+    const modal = await this.modalController.create({
+      component: ModalActionFiguresComponent,
+      cssClass: 'modal-action-figures'
+    });
+    return await modal.present();
+  }
 
    alteracaoIcone = true;
 

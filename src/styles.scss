@@ -409,7 +409,14 @@ ion-modal{
     }
 
     }
+
+    &.modal-action-figures{
+    --width: 440px;
+    
+    --border-radius: 20px;
+    }
 }
+
 
 //Responsividade section contact
 @media screen and (max-width:800px) {
