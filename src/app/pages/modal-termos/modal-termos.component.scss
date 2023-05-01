@@ -28,14 +28,15 @@
             font-family: var(--font-family-second);
             font-size: 18px;
             width: 120px;
-            background-color: #ff0000;
-            font-weight: 400;
-            color: #fff;
-            border: none;
+            background-color: #fff;
+            border: 2px solid #f00;
+            font-weight: 500;
+            color: #f00;
 
             &:hover {
                 color: #fff;
-                background-color: #990000;
+                background-color: #f00;
+                border: none
             }
         }
     }

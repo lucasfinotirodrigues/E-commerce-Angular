@@ -397,7 +397,7 @@ ion-modal{
     &.modal-termos{
         --width: 360px;
         --height:520px ;
-        --border-radius: 16px;
+        --border-radius: 8px;
         
         &.conteudo{
             --display:flex;
@@ -412,8 +412,8 @@ ion-modal{
 
     &.modal-action-figures{
     --width: 440px;
-    
-    --border-radius: 20px;
+    --height:520px ;
+    --border-radius: 8px;
     }
 }
 

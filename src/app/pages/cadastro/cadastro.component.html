@@ -62,24 +62,24 @@
         <div class="campo">
             <label for="">Senha</label>
             <input [type]="MostrarSenha ? 'text' : 'password'" class="input-login" type="password" id="">
-            <img class="image" [src]="MostrarSenha ?  '../../../assets/eye-on.svg' : '../../../assets/eye-off.svg' " (click)="visibilidadeSenha()" >
+            <img class="image" [src]="MostrarSenha ?  '../../../assets/unlock.svg' : '../../../assets/lock.svg' " (click)="visibilidadeSenha()" >
          
         </div>
         <div class="campo">
             <label for=""> Confirmação de Senha</label>
             <input [type]="MostraressaSenha ? 'text' : 'password'" class="input-login" type="password" id="">
-            <img class="image" [src]="MostraressaSenha ?  '../../../assets/eye-on.svg' : '../../../assets/eye-off.svg' " (click)="visibilidadedaSenha()" >
+            <img class="image" [src]="MostraressaSenha ?  '../../../assets/unlock.svg' : '../../../assets/lock.svg' " (click)="visibilidadedaSenha()" >
          
         </div>
         <div class="checkbox">
             <input type="checkbox" id="chk1" class="checkbox" name="chk">
             <label for="chk1">
-                <p class="text-term" style="font-size: 14px;">Li e aceito todos os  <a style="font-size: 14px;text-transform: lowercase;" (click)="showModal()">termos de privacidade</a></p>
+                <p class="text-term" style="font-size: 14px;">Li e aceito todos os  <a style="font-size: 14px;text-transform: lowercase;cursor:pointer" (click)="showModal()">termos de privacidade</a></p>
             </label>
           </div>
       
         <button class="btn btn-outline-danger"  type="submit">Cadastrar</button>
-        <h3>Já Possui conta? <a class="logar" [routerLink]="['/login']">Entrar</a> </h3>
+        <h3>Já possui conta? <a class="logar" [routerLink]="['/login']">Entrar</a> </h3>
     </div>
     
     </div>
