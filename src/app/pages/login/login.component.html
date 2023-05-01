@@ -1,52 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-bar">
-    <div class="container-fluid">
-      <a [routerLink]="['/']"><img  class="logo" src="assets/logo.png"></a>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="O que você está procurando?" aria-label="Search">
-        <button class="btn btn-outline-danger" id="button" type="submit" style="height: 36px; margin-top: 6px;"><img
-            class="search" src="assets/search-.svg"></button>
-      </form>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
+<!--Importando o navbar-->
+<app-navbar></app-navbar>
 
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/login']">Entrar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/cadastro']">Cadastre-se</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/manga']">Mangás</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/quadros']">Quadros</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Roupas
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" [routerLink]="['/roupas-masculina']">Masculinas</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" [routerLink]="['/roupas-feminina']">Femininas</a></li>
-            </ul>
-
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/action-figures']">Action Figures</a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </nav>
   <div class="container-login">
 
 <div class="form">
