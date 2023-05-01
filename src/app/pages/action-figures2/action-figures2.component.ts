@@ -8,51 +8,121 @@ import { Component, OnInit } from '@angular/core';
 export class ActionFigures2Component implements OnInit {
 
 
-  lista = [
-  
+  alternarIcone = false;    // Lista de propriedades de alternar entre icones de favoritos
 
-    
-    {src:'../../../assets/af06.jpg', nome: 'Gol D. Roger',tamanho:'23', preco:'317,90', default:'../../../assets/heart.svg', },    
-    
-    {src:'../../../assets/af07.jpg', nome: 'Yamato',tamanho:'21', preco:'305,90', default:'../../../assets/heart.svg', },  
-    
-    {src:'../../../assets/af08.jpg', nome: 'Portgas D. Ace',tamanho:'20', preco:'246,90', default:'../../../assets/heart.svg', },  
-    
-    {src:'../../../assets/af10.jpg', nome: 'Barba Branca',tamanho:'23', preco:'309,90', default:'../../../assets/heart.svg', },  
-    
-    {src:'../../../assets/af11.jpg', nome: 'Marco a Fenix',tamanho:'22', preco:'299,90', default:'../../../assets/heart.svg', },  
-    
-    {src:'../../../assets/af12.jpg', nome: 'Charlotte Katakuri',tamanho:'20', preco:'199,90', default:'../../../assets/heart.svg', },  
-    
-    {src:'../../../assets/af13.jpg', nome: 'Doflamingo',tamanho:'25', preco:'199,90', default:'../../../assets/heart.svg', },  
-    
-    {src:'../../../assets/af14.jpg', nome: 'Trafalgar D. Law',tamanho:'26', preco:'217,90', default:'../../../assets/heart.svg', },  
-    
-    {src:'../../../assets/af27.jpg', nome: 'Kaido',tamanho:'24', preco:'317,90', default:'../../../assets/heart.svg', },  
-    
-    {src:'../../../assets/af28.jpg', nome: 'Raleigh',tamanho:'22', preco:'308,90', default:'../../../assets/heart.svg', },  
-    
-    {src:'../../../assets/af24.jpg', nome: 'Boa Hancock',tamanho:'18', preco:'197,90', default:'../../../assets/heart.svg', },  
-    
-    {src:'../../../assets/af21.jpg', nome: 'Bartolomeo',tamanho:'19', preco:'163,90', default:'../../../assets/heart.svg', },  
+  alterIcon(item:any) {
+    item.alternarIcone = !item.alternarIcone;   // Lista de funções Click para alternar ícones separadamente
+  }
+
+
+  lista = [
+
+    {
+      src:'../../../assets/af06.jpg',
+      nome: 'Gol D. Roger',
+      tamanho:'23',
+      preco:'317,90',
+      alternarIcone: false
+    },
+
+    {
+      src:'../../../assets/af07.jpg',
+      nome: 'Yamato',
+      tamanho:'21',
+      preco:'305,90'
+    },
+
+    {
+      src:'../../../assets/af08.jpg',
+      nome: 'Portgas D. Ace',
+      tamanho:'20',
+      preco:'246,90',
+      alternarIcone: false
+    },
+
+    {
+      src:'../../../assets/af10.jpg',
+      nome: 'Barba Branca',
+      tamanho:'23',
+      preco:'309,90',
+      alternarIcone: false
+    },
+
+    {
+      src:'../../../assets/af11.jpg',
+      nome: 'Marco a Fenix',
+      tamanho:'22',
+      preco:'299,90',
+      alternarIcone: false
+    },
+
+    {
+      src:'../../../assets/af12.jpg',
+      nome: 'Charlotte Katakuri',
+      tamanho:'20',
+      preco:'199,90',
+      alternarIcone: false
+    },
+
+    {
+      src:'../../../assets/af13.jpg',
+      nome: 'Doflamingo',
+      tamanho:'25',
+      preco:'199,90',
+      alternarIcone: false
+    },
+
+    {
+      src:'../../../assets/af14.jpg',
+      nome: 'Trafalgar D. Law',
+      tamanho:'26',
+      preco:'217,90',
+      alternarIcone: false
+    },
+
+    {
+      src:'../../../assets/af27.jpg',
+      nome: 'Kaido',
+      tamanho:'24',
+      preco:'317,90',
+      alternarIcone: false
+    },
+
+    {
+      src:'../../../assets/af28.jpg',
+      nome: 'Raleigh',
+      tamanho:'22',
+      preco:'308,90',
+      alternarIcone: false
+    },
+
+    {
+      src:'../../../assets/af24.jpg',
+      nome: 'Boa Hancock',
+      tamanho:'18',
+       preco:'197,90',
+       alternarIcone: false
+    },
+
+    {
+      src:'../../../assets/af21.jpg',
+      nome: 'Bartolomeo',
+      tamanho:'19',
+      preco:'163,90',
+      alternarIcone: false
+    },
 
   ];
 
-  
-  alterIcon(index: number) {
-    // Altere apenas um item do card usando a indexação do array
-    this.lista[index].default = '../../../assets/heart.png';
-  }
+
 
   constructor() {
-  
+
    }
 
-   alteracaoIcone = true;
-   
   ngOnInit(): void {
     window.scrollTo(0, 0);
   }
-  
+
 
 }
