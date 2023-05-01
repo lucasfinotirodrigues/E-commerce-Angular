@@ -9,13 +9,14 @@ import { ModalActionFiguresComponent } from '../modal-action-figures/modal-actio
 })
 export class ActionFiguresComponent implements OnInit {
 
+
+  selectedItem: any;  // Item selecionado da lista
+
   alternarIcone = false;    // Lista de propriedades de alternar entre icones de favoritos
 
   alterIcon(item:any) {
     item.alternarIcone = !item.alternarIcone;   // Lista de funções Click para alternar ícones separadamente
   }
-
-
 
   lista = [   //Lista de personagens para preencher pelos cards
 
@@ -110,10 +111,14 @@ export class ActionFiguresComponent implements OnInit {
 
   // Modal
 
-  async showModal() {
+  async showModal(item:any) {
+    this.selectedItem = item;
     const modal = await this.modalController.create({
       component: ModalActionFiguresComponent,
-      cssClass: 'modal-action-figures'
+      cssClass: 'my-custom-class',
+      componentProps: {
+        item: this.selectedItem
+      }
     });
     return await modal.present();
   }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { ModalController, NavParams } from '@ionic/angular';
 
 @Component({
   selector: 'app-modal-action-figures',
@@ -9,7 +9,13 @@ import { ModalController } from '@ionic/angular';
 export class ModalActionFiguresComponent {
 
 
-  constructor(public modalController: ModalController) {}
+
+  item: any;
+
+  constructor(public modalController: ModalController, navParams: NavParams) {
+    this.item = navParams.get('item');
+  }
+
   // Função Fechar modal
 
   async closeModal() {
