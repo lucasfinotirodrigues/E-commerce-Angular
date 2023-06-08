@@ -1,4 +1,4 @@
-//Reset CSS 
+//Reset CSS
 
 html,
 body,
@@ -284,8 +284,8 @@ table {
 
 #footer {
     background-color: #000;
-    padding: 28px;    
-   
+    padding: 28px;
+
     .line{
         border-top: #ff0000 4px solid;
         margin-left: 24px;
@@ -340,6 +340,7 @@ table {
                 .icon-heart {
                     width: 24px;
                     position: relative;
+                    cursor: pointer;
                 }
             }
 
@@ -364,7 +365,7 @@ table {
     }
 
     //Estilização da paginação
-    
+
 
     .page-link {
         position: relative;
@@ -386,8 +387,8 @@ table {
    nav{
     margin-top: 24px;
    }
-   
-   
+
+
 }
 
 // Estilização dos modais
@@ -398,7 +399,7 @@ ion-modal{
         --width: 360px;
         --height:520px ;
         --border-radius: 8px;
-        
+
         &.conteudo{
             --display:flex;
             --align-items:center;

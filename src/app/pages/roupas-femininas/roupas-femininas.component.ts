@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalActionFiguresComponent } from '../modal-action-figures/modal-action-figures.component';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-roupas-femininas',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoupasFemininasComponent implements OnInit {
 
-  constructor() { }
+  selectedItem: any;
 
   alternarIcone = false;    // Lista de propriedades de alternar entre icones de favoritos
 
@@ -106,7 +108,25 @@ export class RoupasFemininasComponent implements OnInit {
 
 
   ]
-  ngOnInit(): void {
+
+  constructor(public modalController: ModalController) {}
+
+  // Modal
+
+  async showModal(item:any) {
+    this.selectedItem = item;
+    const modal = await this.modalController.create({
+      component: ModalActionFiguresComponent,
+      cssClass: 'my-custom-class',
+      componentProps: {
+        item: this.selectedItem
+      }
+    });
+    return await modal.present();
   }
 
+ // Função de sempre iniciar após o reload no topo da página
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }

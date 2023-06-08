@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ModalActionFiguresComponent } from '../modal-action-figures/modal-action-figures.component';
 
 @Component({
   selector: 'app-action-figures2',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActionFigures2Component implements OnInit {
 
+  selectedItem: any;  // Item selecionado da lista
 
   alternarIcone = false;    // Lista de propriedades de alternar entre icones de favoritos
 
@@ -114,15 +117,24 @@ export class ActionFigures2Component implements OnInit {
 
   ];
 
+  constructor(public modalController: ModalController) {}
 
+  // Modal
 
-  constructor() {
+  async showModal(item:any) {
+    this.selectedItem = item;
+    const modal = await this.modalController.create({
+      component: ModalActionFiguresComponent,
+      cssClass: 'my-custom-class',
+      componentProps: {
+        item: this.selectedItem
+      }
+    });
+    return await modal.present();
+  }
 
-   }
-
+ // Função de sempre iniciar após o reload no topo da página
   ngOnInit(): void {
     window.scrollTo(0, 0);
   }
-
-
 }
