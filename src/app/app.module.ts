@@ -14,7 +14,6 @@ import { MangasNovosComponent } from './pages/mangas-novos/mangas-novos.componen
 import { RoupasMasculinasComponent } from './pages/roupas-masculinas/roupas-masculinas.component';
 import { RoupasFemininasComponent } from './pages/roupas-femininas/roupas-femininas.component';
 import { QuadrosComponent } from './pages/quadros/quadros.component';
-import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { IonicModule } from '@ionic/angular';
 import { ModalTermosComponent } from './pages/modal-termos/modal-termos.component';
@@ -33,7 +32,6 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
     RoupasMasculinasComponent,
     RoupasFemininasComponent,
     QuadrosComponent,
-    FeedbackComponent,
     ModalTermosComponent,
     NavbarComponent,
   ],
