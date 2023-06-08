@@ -8,7 +8,7 @@
     justify-content: center;
     width: 100%;
 
-    .form{       
+    .form{
         padding: 52px;
         margin: 48px 48px;
         height: 560px;
@@ -30,7 +30,7 @@
             font-weight: 400;
             color:#fff;
             border: none
-          
+
         }
         h3{
             color:#fff;
@@ -44,7 +44,7 @@
             color:#ff0000;
             font-weight: 500;
         }
-       
+
         .campo{
             display: flex;
             flex-direction: column;
@@ -69,6 +69,7 @@
                 width: 18px;
                 right: 8px;
                 bottom: 8px;
+                cursor: pointer;
             }
             label{
                 font-weight: 300;
@@ -79,7 +80,7 @@
             }
         }
     }
-    
+
 
     .titulo-login{
         color:#fff;
@@ -89,7 +90,7 @@
         font-weight: 500;
         font-family: var(--font-family-second);
     }
-    
+
 
 }
 
@@ -101,12 +102,12 @@
     flex-direction: row;
     align-items: center;
     gap:8px;
-    
+
     input:checked{
         background-color: #ff0000;
     }
-    
-   
+
+
 }
 .text-term{
     color:#fff;
@@ -190,7 +191,7 @@ a{
 //Responsividade
 
 @media screen and (max-width: 450px) {
-    .form{       
+    .form{
         padding: 48px!important;
         margin: 4px 4px!important;
         height: 600px!important;
@@ -205,13 +206,13 @@ a{
         }
         .input-login{
             font-size: 18px!important;
-            
+
         }
         h3{
             font-size: 18px;
         }
     }
-    
+
 
 
 @media screen  and (max-width: 350px) {
@@ -220,7 +221,7 @@ a{
         padding: 32px!important;
         margin-bottom: 36px!important;
     }
-    
+
     .input-login{
 
         width: 100%;
@@ -233,6 +234,7 @@ a{
         width: 18px;
         right: 8px;
         bottom: 6px!important;
+        cursor: pointer;
     }
     h3{
         font-size: 16px;
@@ -246,5 +248,5 @@ a{
         height: 760px !important;
         margin-bottom: 40px!important;
     }
-    
+
 }
