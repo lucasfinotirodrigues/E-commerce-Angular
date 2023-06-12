@@ -1,16 +1,21 @@
-.header-modal {
-  display: flex;
-  justify-content: space-between;
-  p{
-    color: #fff;
-  }
+.cont {
 
-  img {
-    cursor: pointer;
-  }
-  .card-title{
-    text-transform: uppercase;
-    font-weight: 500;
+  .header-modal {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      color: #fff;
+    }
+
+    img {
+      cursor: pointer;
+    }
+
+    .card-title {
+      text-transform: uppercase;
+      font-weight: 500;
+    }
   }
 }
 

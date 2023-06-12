@@ -1,14 +1,17 @@
-<div class="header-modal p-4">
-  <p>.</p>
-  <h5 class="card-title fs-3">{{ item.nome || item.volume}}</h5>
-  <img (click)="closeModal()" src="../../../assets/x.svg">
+<div class="cont">
+  <div class="header-modal p-4">
+    <p>.</p>
+    <h5 class="card-title fs-3">{{ item.nome || item.volume}}</h5>
+    <img (click)="closeModal()" src="../../../assets/x.svg">
+  </div>
+  <div class="conteudo p-4">
+    <img class="card-img-top" [src]=item.src alt="Card image cap">
+    <p class="card-text mb-2">Action figure feito com o material ABS. Acompanha suporte!</p>
+    <h5 class="card-title fs-3 fw-bold">R${{item.preco}}</h5>
+  </div>
+  <div class="card-body d-flex justify-content-center">
+    <a class="btn btn-danger">Comprar</a>
+  </div>
 </div>
-<div class="conteudo p-4">
-  <img class="card-img-top" [src]=item.src alt="Card image cap">
-  <p class="card-text mb-2">Action figure feito com o material ABS. Acompanha suporte!</p>
-  <h5 class="card-title fs-3 fw-bold">R${{item.preco}}</h5>
-</div>
-<div class="card-body d-flex justify-content-center">
-  <a class="btn btn-danger">Comprar</a>
-</div>
+
 
