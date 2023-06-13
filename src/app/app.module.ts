@@ -18,6 +18,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
 import { IonicModule } from '@ionic/angular';
 import { ModalTermosComponent } from './pages/modal-termos/modal-termos.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
+import { PagamentoComponent } from './pages/pagamento/pagamento.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
     QuadrosComponent,
     ModalTermosComponent,
     NavbarComponent,
+    PagamentoComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ import { MangasNovosComponent } from './pages/mangas-novos/mangas-novos.componen
 import { QuadrosComponent } from './pages/quadros/quadros.component';
 import { RoupasFemininasComponent } from './pages/roupas-femininas/roupas-femininas.component';
 import { RoupasMasculinasComponent } from './pages/roupas-masculinas/roupas-masculinas.component';
+import { PagamentoComponent } from './pages/pagamento/pagamento.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,9 @@ const routes: Routes = [
   {
     path: 'quadros', component:QuadrosComponent
   },
+  {
+    path: 'pagamento', component:PagamentoComponent
+  }
 ];
 
 @NgModule({
