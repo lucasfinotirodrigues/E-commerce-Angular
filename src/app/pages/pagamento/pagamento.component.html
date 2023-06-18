@@ -8,22 +8,22 @@
     <!--Primeira parte-->
     <div *ngIf="currentSection === 1" class="information mb-4 mt-4">
       <div class="group">
-        <img src="../../../assets/product-primary.svg" alt="">
+        <img class="circle-icon" src="../../../assets/product-primary.svg" alt="">
         <p class="text-danger">Produto</p>
-        <img src="../../../assets/Icones.svg" alt="">
+        <img class="icon-separator" src="../../../assets/Icones.svg" alt="">
       </div>
       <div class="group">
-        <img src="../../../assets/address-primary.svg" alt="">
+        <img class="circle-icon" src="../../../assets/address-primary.svg" alt="">
         <p class="text-secondary">Endereço</p>
-        <img src="../../../assets/Icones.svg" alt="">
+        <img class="icon-separator" src="../../../assets/Icones.svg" alt="">
       </div>
       <div class="group">
-        <img src="../../../assets/currency-primary.svg" alt="">
+        <img class="circle-icon" src="../../../assets/currency-primary.svg" alt="">
         <p class="text-secondary">Pagamento</p>
       </div>
     </div>
     <div *ngIf="currentSection === 1" class="header-form mt-3">
-      <img src="../../../assets/af01.jpg" alt="">
+      <img class="image-first" src="../../../assets/af01.jpg" alt="">
       <h5 class="card-title fs-3 mt-3 mb-2">Action Figure Zoro</h5>
       <h5 class="text-muted mb-2">Tamanho: 21cm</h5>
       <p class="card-text mb-2">Action figure feito com o material ABS<br> Acompanha suporte!</p>
@@ -36,17 +36,17 @@
     <!--Segunda parte-->
     <div *ngIf="currentSection === 2" class="information mb-4 mt-4">
       <div class="group">
-        <img src="../../../assets/product-secondary.svg" alt="">
-        <p style="color:#500000">Produto</p>
-        <img src="../../../assets/Icones.svg" alt="">
+        <img class="circle-icon" src="../../../assets/product-secondary.svg" alt="">
+        <p class="sucess" style="color:#500000">Produto</p>
+        <img class="icon-separator" src="../../../assets/Icones.svg" alt="">
       </div>
       <div class="group">
-        <img src="../../../assets/address-secondary.svg" alt="">
+        <img class="circle-icon" src="../../../assets/address-secondary.svg" alt="">
         <p class="text-danger">Endereço</p>
-        <img src="../../../assets/Icones.svg" alt="">
+        <img class="icon-separator" src="../../../assets/Icones.svg" alt="">
       </div>
       <div class="group">
-        <img src="../../../assets/currency-secondary.svg" alt="">
+        <img class="circle-icon" src="../../../assets/currency-secondary.svg" alt="">
         <p class="text-secondary">Pagamento</p>
       </div>
     </div>
@@ -77,8 +77,8 @@
           <input type="name" name="" id="">
         </div>
       </div>
-      <div class=" rigth-img">
-        <img src="../../../assets/af01.jpg" alt="">
+      <div class="rigth-img">
+        <img class="second-image" src="../../../assets/af01.jpg" alt="">
         <h5 class="card-text mb-2">Action Figure Zoro</h5>
         <h5 class="text-muted mb-2">R$119,90</h5>
       </div>
@@ -88,43 +88,46 @@
       <button class="next btn btn-danger" (click)="nextSection()">Próximo</button>
     </div>
     <!--Terceira parte-->
-    <div *ngIf="currentSection === 3" class="information mb-4 mt-4">
+    <div *ngIf="currentSection === 3" class="information mb-2 mt-4">
       <div class="group">
-        <img src="../../../assets/product-tertiary.svg" alt="">
-        <p style="color:#500000">Produto</p>
-        <img src="../../../assets/Icones.svg" alt="">
+        <img class="circle-icon" src="../../../assets/product-tertiary.svg" alt="">
+        <p class="sucess" style="color:#500000">Produto</p>
+        <img class="icon-separator" src="../../../assets/Icones.svg" alt="">
       </div>
       <div class="group">
-        <img src="../../../assets/address-tertiary.svg" alt="">
-        <p style="color:#500000">Endereço</p>
-        <img src="../../../assets/Icones.svg" alt="">
+        <img class="circle-icon" src="../../../assets/address-tertiary.svg" alt="">
+        <p class="sucess" style="color:#500000">Endereço</p>
+        <img class="icon-separator" src="../../../assets/Icones.svg" alt="">
       </div>
       <div class="group">
-        <img src="../../../assets/currency-tertiary.svg" alt="">
+        <img class="circle-icon" src="../../../assets/currency-tertiary.svg" alt="">
         <p class="text-danger">Pagamento</p>
       </div>
     </div>
 
     <div *ngIf="currentSection === 3" class="payment">
-      <div class="info-form">
+      <div class="msg d-flex flex-column align-items-center">
+        <h5 class="grey card-title fs-5 mt-3 mb-3">Escolha a forma de pagamento</h5>
 
-        <div class="checkbox">
-          <input type="radio" id="chk1" class="checkbox" name="chk">
-          <label for="chk1" name="chk">
-            <p class="text-term">Pix</p>
-          </label>
-        </div>
-        <div class="checkbox">
-          <input type="radio" id="chk2" class="checkbox" name="chk">
-          <label for="chk2" name="chk">
-            <p class="text-term">Boleto Bancário</p>
-          </label>
-        </div>
-        <div class="checkbox">
-          <input type="radio" id="chk3" class="checkbox" name="chk">
-          <label for="chk3" name="chk">
-            <p class="text-term">Cartão de crédito</p>
-          </label>
+        <div class="info-form">
+          <div class="checkbox">
+            <input type="radio" id="chk1" class="checkbox" name="chk">
+            <label for="chk1" name="chk">
+              <p class="text-term">Pix</p>
+            </label>
+          </div>
+          <div class="checkbox">
+            <input type="radio" id="chk2" class="checkbox" name="chk">
+            <label for="chk2" name="chk">
+              <p class="text-term">Boleto</p>
+            </label>
+          </div>
+          <div class="checkbox">
+            <input type="radio" id="chk3" class="checkbox" name="chk">
+            <label for="chk3" name="chk">
+              <p class="text-term">Cartão</p>
+            </label>
+          </div>
         </div>
       </div>
 

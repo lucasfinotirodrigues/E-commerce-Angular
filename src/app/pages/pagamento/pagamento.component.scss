@@ -23,7 +23,7 @@
 
       .group {
         display: flex;
-        gap: 8px;
+        gap: 2px;
         align-items: center;
 
         p {
@@ -83,20 +83,20 @@
 
 //Segunda parte
 
-label{
- font-size: 15px;
+label {
+  font-size: 15px;
 }
 
-.forms-divider{
+.forms-divider {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 0 28px;
 }
 
-.rigth-img{
-  img{
-    width:120px;
+.rigth-img {
+  img {
+    width: 200px;
   }
 }
 
@@ -170,17 +170,117 @@ label{
   border: 1px solid #DC3545;
 }
 
-.checkbox input:checked + label::before {
+.checkbox input:checked+label::before {
   background: #ffffff;
 }
 
-.checkbox input:checked + label::after {
+.checkbox input:checked+label::after {
   opacity: 1;
   content: "";
 }
 
-.info-form{
+.info-form {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  gap: 20px;
+}
+
+
+// Responsividade
+
+@media screen and (max-width: 700px) {
+  .rigth-img {
+    display: none;
+  }
+
+  .formulário-endereço {
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .circle-icon {
+    width: 20px;
+  }
+
+  .text-secondary {
+    font-size: 10px;
+  }
+
+  .information {
+    .group {
+      gap: 2px
+    }
+  }
+
+  .footer-forms {
+    padding: 0;
+  }
+
+  .forms-divider {
+    padding: 0 28px 0 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .team-in {
+    input {
+      width: 260px;
+    }
+  }
+
+  .grey {
+    font-size: 16px !important;
+  }
+
+  label::before {
+    height: 12px!important;
+    width: 12px!important
+  }
+
+  label::after {
+    width: 7px!important;
+    height: 7px!important;
+    left: 6px!important;
+  }
+  .text-term{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .circle-icon {
+    width: 16px !important;
+  }
+
+  .icon-separator {
+    width: 12px !important;
+  }
+
+  .text-secondary,
+  .text-danger,
+  .sucess {
+    font-size: 14px !important;
+  }
+
+  .header-form {
+    padding: 0 16px;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header-form {
+    padding: 16px;
+  }
+
+  .image-first {
+    width: 248px !important
+  }
+
+  .forms {
+    width: 90% !important;
+  }
 }
