@@ -22,4 +22,8 @@ export class PagamentoComponent {
     }
   }
 
+  onCopySuccess() {
+    console.log('Pix copiado com sucesso!');
+  }
+
 }

@@ -172,6 +172,14 @@
         </div> -->
 
 
+        <!--Pagamento com pix-->
+        <div class="pix">
+          <button ngxClipboard [cbContent]="'a56c-4928-98be-9b7bbf14beeab'" class="btn btn-danger"
+            (cbOnSuccess)="onCopySuccess()">
+            <img src="../../../assets/copy.svg" alt="">
+          </button>
+          <p class="mesage">a56c-4928-98be-9b7bbf14beeab</p>
+        </div>
       </div>
 
     </div>

@@ -19,6 +19,7 @@ import { IonicModule } from '@ionic/angular';
 import { ModalTermosComponent } from './pages/modal-termos/modal-termos.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { PagamentoComponent } from './pages/pagamento/pagamento.component';
+import { ClipboardModule } from 'ngx-clipboard';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { PagamentoComponent } from './pages/pagamento/pagamento.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ClipboardModule,
     RouterModule,
     IonicModule.forRoot(),
     NgxEchartsModule.forRoot({
