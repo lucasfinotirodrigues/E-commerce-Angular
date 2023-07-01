@@ -20,6 +20,7 @@ import { ModalTermosComponent } from './pages/modal-termos/modal-termos.componen
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { PagamentoComponent } from './pages/pagamento/pagamento.component';
 import { ClipboardModule } from 'ngx-clipboard';
+import { MessageComponent } from './pages/message/message.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ClipboardModule } from 'ngx-clipboard';
     ModalTermosComponent,
     NavbarComponent,
     PagamentoComponent,
+    MessageComponent,
   ],
   imports: [
     BrowserModule,

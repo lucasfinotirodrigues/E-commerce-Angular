@@ -173,14 +173,16 @@
 
 
         <!--Pagamento com pix-->
+
         <div class="pix">
           <button ngxClipboard [cbContent]="'a56c-4928-98be-9b7bbf14beeab'" class="btn btn-danger"
-            (cbOnSuccess)="onCopySuccess()">
+            (cbOnSuccess)="exibirMensagem()" (click)="exibirMensagem()">
             <img src="../../../assets/copy.svg" alt="">
           </button>
           <p class="mesage">a56c-4928-98be-9b7bbf14beeab</p>
         </div>
-      </div>
+        
+        <app-message></app-message>
 
     </div>
     <div *ngIf="currentSection === 3" class="footer-forms mb-3 mt-3">

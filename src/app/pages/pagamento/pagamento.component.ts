@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { MessageService} from './message.service';
 @Component({
   selector: 'app-pagamento',
   templateUrl: './pagamento.component.html',
@@ -9,10 +9,18 @@ import { Component } from '@angular/core';
     './pagamento-meios.component.scss'
   ]
 })
-export class PagamentoComponent {
+export class PagamentoComponent implements OnInit{
 
+  constructor(private messageService: MessageService){
+  }
+
+  messages: string[] = [];
   //Função de voltar e avançar conteúdo
   currentSection = 1;
+
+  ngOnInit() {
+    this.messages = this.messageService.getMessages();
+  }
 
   nextSection(){
     if(this.currentSection < 3){
@@ -28,5 +36,10 @@ export class PagamentoComponent {
 
   onCopySuccess() {
     console.log('Pix copiado com sucesso!');
+  }
+
+  exibirMensagem() {
+    const mensagem = 'Copiado para a área de transferência!';
+    this.messageService.add(mensagem);
   }
 }
