@@ -3,7 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-pagamento',
   templateUrl: './pagamento.component.html',
-  styleUrls: ['./pagamento.component.scss']
+  styleUrls: [
+    './pagamento.component.scss',
+    './pagamento-resposividade.component.scss',
+    './pagamento-meios.component.scss'
+  ]
 })
 export class PagamentoComponent {
 
@@ -25,5 +29,4 @@ export class PagamentoComponent {
   onCopySuccess() {
     console.log('Pix copiado com sucesso!');
   }
-
 }
