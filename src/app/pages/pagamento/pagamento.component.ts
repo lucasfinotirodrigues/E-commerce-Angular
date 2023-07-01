@@ -17,6 +17,10 @@ export class PagamentoComponent implements OnInit{
   messages: string[] = [];
   //Função de voltar e avançar conteúdo
   currentSection = 1;
+  pixSelected = false;
+  cartaoSelected = false;
+  exibirCartao = false
+  exibirPix = false
 
   ngOnInit() {
     this.messages = this.messageService.getMessages();
@@ -41,5 +45,19 @@ export class PagamentoComponent implements OnInit{
   exibirMensagem() {
     const mensagem = 'Copiado para a área de transferência!';
     this.messageService.add(mensagem);
+  }
+
+  togglePix() {
+    this.pixSelected = true;
+    this.cartaoSelected = false;
+    this.exibirPix = true;
+    this.exibirCartao = false;
+  }
+
+  toggleCartao() {
+    this.pixSelected = false;
+    this.cartaoSelected = true;
+    this.exibirPix = false;
+    this.exibirCartao = true;
   }
 }

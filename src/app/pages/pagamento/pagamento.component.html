@@ -104,41 +104,33 @@
         <p class="text-danger">Pagamento</p>
       </div>
     </div>
-
     <div *ngIf="currentSection === 3" class="payment">
       <div class="msg d-flex flex-column align-items-center">
         <h5 class="grey card-title fs-5 mt-3 mb-3">Escolha a forma de pagamento</h5>
-
         <div class="info-form">
           <div class="checkbox">
-            <input type="radio" id="chk1" class="checkbox" name="chk">
+            <input type="radio" id="chk1" class="checkbox" name="chk" [checked]="pixSelected" (change)="togglePix()">
             <label for="chk1" name="chk">
               <p class="text-term">Pix</p>
             </label>
           </div>
           <div class="checkbox">
-            <input type="radio" id="chk2" class="checkbox" name="chk">
-            <label for="chk2" name="chk">
-              <p class="text-term">Boleto</p>
-            </label>
-          </div>
-          <div class="checkbox">
-            <input type="radio" id="chk3" class="checkbox" name="chk">
+            <input type="radio" id="chk3" class="checkbox" name="chk" [checked]="cartaoSelected"
+              (change)="toggleCartao()">
             <label for="chk3" name="chk">
               <p class="text-term">Cartão</p>
             </label>
           </div>
         </div>
-
         <!--Pagamento no cartão-->
-        <!-- <div class="cont">
+        <div class="cont" class="cont" *ngIf="exibirCartao">
           <div class="card box2 shadow-sm">
             <form action="">
               <div class="row">
                 <div class="col-12">
                   <div class="d-flex flex-column px-md-5 px-4 mb-4"> <span>Nome</span>
-                    <div class="inputWithIcon"> <input class="form-control" type="text"
-                        placeholder="Lucas Finoti"> <span class="far fa-user"></span> </div>
+                    <div class="inputWithIcon"> <input class="form-control" type="text" placeholder="Lucas Finoti">
+                      <span class="far fa-user"></span> </div>
                   </div>
                 </div>
                 <div class="col-12">
@@ -146,16 +138,15 @@
                     <div class="inputWithIcon">
                       <input class="form-control" type="text" placeholder="5115 5115 5115 5115">
                       <span class="">
-                         <img class="logo"
-                          src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-logok-15.png"
-                          alt="">
+                        <img class="logo"
+                          src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-logok-15.png" alt="">
                       </span>
-                     </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="d-flex flex-column ps-md-5 px-md-0 px-4 mb-4"> <span>Data<span
-                        class="ps-1">de validade</span></span>
+                  <div class="d-flex flex-column ps-md-5 px-md-0 px-4 mb-4"> <span>Data<span class="ps-1">de
+                        validade</span></span>
                     <div class="inputWithIcon"> <input type="text" class="form-control" placeholder="05/2024"> <span
                         class="fas fa-calendar-alt"></span> </div>
                   </div>
@@ -169,27 +160,20 @@
               </div>
             </form>
           </div>
-        </div> -->
-
-
+        </div>
         <!--Pagamento com pix-->
-
-        <div class="pix">
+        <div class="pix" *ngIf="exibirPix" >
           <button ngxClipboard [cbContent]="'a56c-4928-98be-9b7bbf14beeab'" class="btn btn-danger"
             (cbOnSuccess)="exibirMensagem()" (click)="exibirMensagem()">
             <img src="../../../assets/copy.svg" alt="">
           </button>
           <p class="mesage">a56c-4928-98be-9b7bbf14beeab</p>
         </div>
-        
         <app-message></app-message>
-
-    </div>
-    <div *ngIf="currentSection === 3" class="footer-forms mb-3 mt-3">
-      <button class="btn btn-outline-danger" (click)="backSection()">Voltar</button>
-      <button class="next btn btn-danger">Comprar</button>
+      </div>
+      <div *ngIf="currentSection === 3" class="footer-forms mb-3 mt-3">
+        <button class="btn btn-outline-danger" (click)="backSection()">Voltar</button>
+        <button class="next btn btn-danger">Comprar</button>
+      </div>
     </div>
   </div>
-
-
-</div>
